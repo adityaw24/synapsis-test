@@ -91,14 +91,8 @@ function FullDataTable({
             pageIndex: debouncedPageIndex,
             searchValue: debouncedSearchValue,
         });
-    }, [
-        refreshTrigger,
-        pageSize,
-        debouncedPageIndex,
-        debouncedSearchValue,
-        getTableData,
-        pageSkip,
-    ]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [refreshTrigger, pageSize, debouncedPageIndex, debouncedSearchValue]);
 
     return (
         <>
